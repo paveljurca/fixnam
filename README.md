@@ -1,36 +1,51 @@
-namer
-=====
+namr
+====
 
-a BASH/Perl script to rename improperly named mp3 files
-
-currently [ **NON-USABLE** ] &amp; under the development
+rename improperly named mp3 files
 
 ---
+replace
 
-this is gonna replace
 * spaces
 * single quotes
 * ...
 * whatever chars beyond ASCII
-from your file names!
 
-so there's **no** warranty though
+with defined 
+
 
 ### use cases
 
 * can't switch keyboard layout
 * can't change terminal's *LC_ALL*, *LANG* etc.
 * [cp](http://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html) telling you about invalid chars
-* u just hate spaces in file names
+* [$IFS](http://tldp.org/LDP/abs/html/special-chars.html#FIELDREF)
+* u just hate spaces and all the mess in your mp3 files
 
 ### usage
 
-```$> ```
+first you'll get a dump
+about possible replacements
+
+chmod +x namr.pl
+echo "alias namr='$HOME/namr.pl -f '" >> $HOME/.bashrc
+source ~/.bashrc
+
+```$> namr [ DIRs|FILEs ]```
+
+now you get `.namr` file
+and can adjust the forthcoming
+replacements
+
+```$> namr -f ```
+u sure? [yes/no] (no):
+takes that `.namr` file and starts it's job
+
+there's still **no** warranty though
 
 ### changelog
 
-* -1
-initial commit
-it's almost 3 years old
-you better don't wanna use it!
+* namr.sh   
+initial commit  
+3 years old  
 
