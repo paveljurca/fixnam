@@ -22,6 +22,12 @@ with defined
 * [$IFS](http://tldp.org/LDP/abs/html/special-chars.html#FIELDREF)
 * u just hate spaces and all the mess in your mp3 files
 
+problemy s locale pri kopirovani WIN na Linuxu
+
+http://perlgeek.de/en/article/set-up-a-clean-utf8-environment
+http://community.spiceworks.com/topic/271363-how-do-i-remove-invalid-utf-8-characters-in-filenames-using-bash
+
+
 ### usage
 
 first you'll get a dump

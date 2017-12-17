@@ -2,7 +2,10 @@
 use strict;
 use warnings;
 
-my $dir = shift || "";
+#use File::Spec;
+
+
+my $dir = shift || '';
 die "$!\n" unless -d $dir;
 
 chdir $dir;
